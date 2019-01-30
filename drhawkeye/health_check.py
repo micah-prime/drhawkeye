@@ -97,31 +97,31 @@ def check_missing_vars(pattern, file, vars):
     return incomplete
 
 
-if __name__ == '__main__':
-
-    ### Inputs ###
-    dir_pattern = '/data/blizzard/tuolumne/devel/wy2017/local_gradient/runs/run*'
-    file = 'snow.nc'
-    min_size = 1000.0
-    vars = ['thickness', 'snow_density', 'specific_mass', 'liquid_water',
-            'temp_surf', 'temp_lower', 'temp_snowcover', 'thickness_lower',
-            'water_saturation']
-
-    ### Done with inputs ###
-    missing = check_missing_file(dir_pattern, file)
-
-    too_small = check_min_file_size(dir_pattern, file, min_size=min_size)
-
-    incomplete = check_missing_vars(dir_pattern, file, vars)
-
-    print('\nDirectories missing {} file:'.format(file))
-    for li in missing:
-        print(li)
-
-    print('\nFiles where {} file is less than {} kB:'.format(file, min_size))
-    for li in too_small:
-        print(li)
-
-    print('\nFiles where {} is missing vars:'.format(file))
-    for k, v in incomplete.items():
-        print(k, '\t\t', v)
+# if __name__ == '__main__':
+#
+#     ### Inputs ###
+#     dir_pattern = '/data/blizzard/tuolumne/devel/wy2017/local_gradient/runs/run*'
+#     file = 'snow.nc'
+#     min_size = 1000.0
+#     vars = ['thickness', 'snow_density', 'specific_mass', 'liquid_water',
+#             'temp_surf', 'temp_lower', 'temp_snowcover', 'thickness_lower',
+#             'water_saturation']
+#
+#     ### Done with inputs ###
+#     missing = check_missing_file(dir_pattern, file)
+#
+#     too_small = check_min_file_size(dir_pattern, file, min_size=min_size)
+#
+#     incomplete = check_missing_vars(dir_pattern, file, vars)
+#
+#     print('\nDirectories missing {} file:'.format(file))
+#     for li in missing:
+#         print(li)
+#
+#     print('\nFiles where {} file is less than {} kB:'.format(file, min_size))
+#     for li in too_small:
+#         print(li)
+#
+#     print('\nFiles where {} is missing vars:'.format(file))
+#     for k, v in incomplete.items():
+#         print(k, '\t\t', v)

@@ -2,12 +2,10 @@ from inicheck.config import MasterConfig, UserConfig
 from inicheck.tools import get_user_config, check_config
 from inicheck.output import print_config_report, generate_config
 from inicheck.tools import cast_all_variables
+import os
 
 
-from drhawkeye import __core_config__, __recipes__
-
-
-class drhawkeye():
+class HealthCheck():
     """
     Args:
         configFile (str):  path to configuration file.
@@ -31,7 +29,7 @@ class drhawkeye():
                 mcfg = MasterConfig(modules = 'drhawkeye')
 
                 # Read in the original users config
-                self.ucfg = get_user_config(configFile, mcfg=combined_mcfg)
+                self.ucfg = get_user_config(configFile, mcfg=mcfg)
                 self.configFile = configFile
 
             except UnicodeDecodeError as e:
