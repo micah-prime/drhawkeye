@@ -30,13 +30,14 @@ def check_missing_file(pattern, file):
     d_fp = sorted(glob.glob(pf), key=os.path.getmtime)
     d_fp.sort(key=lambda f: os.path.splitext(f))
     d_fp = [os.path.dirname(d) for d in d_fp]
+    d_fp = list(set(d_fp))
     # find differences in the lists
-    missing = [d for d in d_dir if d not in d_fp]
+    missing = [os.path.join(d, file) for d in d_dir if d not in d_fp]
     # return the directories missing the file
     return missing
 
 
-def check_min_file_size(pattern, file, min_size = 1000.0):
+def check_min_file_size(pattern, file, min_size=1000.0):
     """
     Check the size of all files matching pattern and filename and compare
     against a minimum file size in kB
@@ -53,10 +54,9 @@ def check_min_file_size(pattern, file, min_size = 1000.0):
     pf = os.path.join(pattern, file)
     d_fp = sorted(glob.glob(pf), key=os.path.getmtime)
     d_fp.sort(key=lambda f: os.path.splitext(f))
-
     #sz = [os.path.getsize(d) for d in d_fp]
     # find the files that don't meet the minimum size requirements
-    too_small = [d for d in d_fp if os.path.getsize(d)/min_size < min_size]
+    too_small = [d for d in d_fp if os.path.getsize(d)/1000.0 < min_size]
 
     return too_small
 
