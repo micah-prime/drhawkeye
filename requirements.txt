@@ -1,4 +1,5 @@
 netCDF4>=1.2.9
-python-dateutil==2.6.1
 setuptools
-datetime
+inicheck==0.3.3
+twine==1.12.1
+numpy==1.14.0
