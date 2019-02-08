@@ -4,4 +4,4 @@ import os
 cfg = './test_config.ini'
 dr = HealthCheck(cfg)
 
-print(dr.config)
+#print(dr.config)
