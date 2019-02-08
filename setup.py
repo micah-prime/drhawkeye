@@ -14,7 +14,7 @@ setup(
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
-        'CC0 1.0 Universal (CC0 1.0) Public Domain Dedication',
+        'License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication',
         'Natural Language :: English',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
@@ -32,7 +32,7 @@ setup(
     test_suite='tests',
     # tests_require=test_requirements,
     url='https://github.com/usdaarsnwrc/drhawkeye',
-    version='0.2.3',
+    version='0.2.2',
     zip_safe=False,
     scripts=[],
 )
