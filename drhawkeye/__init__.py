@@ -3,7 +3,7 @@ import os
 
 __author__ = """Micah Sandusky"""
 __email__ = 'micah.sandusky@ars.usda.gov'
-__version__ = '0.2.2'
+__version__ = '0.2.3'
 
 __core_config__ = os.path.abspath(os.path.dirname(__file__) + '/CoreConfig.ini')
 __recipes__ = os.path.abspath(os.path.dirname(__file__) + '/recipes.ini')
