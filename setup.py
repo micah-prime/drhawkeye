@@ -14,7 +14,7 @@ setup(
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: CCO 1.0',
+        'License :: OSI Approved :: CC0 1.0',
         'Natural Language :: English',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
@@ -23,7 +23,7 @@ setup(
         'Programming Language :: Python :: 3.7',
     ],
     description="Checking health of programs with consistent directory tree and many outputs",
-    license="CCO 1.0",
+    license="CC0 1.0",
     # long_description=readme + '\n\n' + history,
     include_package_data=True,
     package_data={'drhawkeye':['./CoreConfig.ini',
