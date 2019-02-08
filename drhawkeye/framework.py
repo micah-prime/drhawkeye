@@ -42,8 +42,7 @@ class HealthCheck():
             configFile = ''
 
         else:
-            raise Exception('Config passed to AWSM is neither file name nor UserConfig instance')
-
+            raise Exception('Config passed to drhawkeye is neither file name nor UserConfig instance')
 
         # Check the user config file for errors and report issues if any
         print("Checking config file for issues...")

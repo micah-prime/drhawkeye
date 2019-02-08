@@ -34,6 +34,9 @@ def check_missing_file(pattern, file):
     # find differences in the lists
     missing = [os.path.join(d, file) for d in d_dir if d not in d_fp]
     # return the directories missing the file
+    if len(missing) == 0:
+        missing = None
+
     return missing
 
 
@@ -57,6 +60,8 @@ def check_min_file_size(pattern, file, min_size=1000.0):
     #sz = [os.path.getsize(d) for d in d_fp]
     # find the files that don't meet the minimum size requirements
     too_small = [d for d in d_fp if os.path.getsize(d)/1000.0 < min_size]
+    if len(too_small == 0):
+        None
 
     return too_small
 
@@ -93,6 +98,9 @@ def check_missing_vars(pattern, file, vars):
         mv = [v for v in vars if v not in keys]
         if len(mv) > 0:
             incomplete[d] = mv
+
+    if len(incomplete.keys() == 0):
+        incomplete = None
 
     return incomplete
 

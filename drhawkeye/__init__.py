@@ -7,7 +7,8 @@ __version__ = '0.1.0'
 
 __core_config__ = os.path.abspath(os.path.dirname(__file__) + '/CoreConfig.ini')
 __recipes__ = os.path.abspath(os.path.dirname(__file__) + '/recipes.ini')
+__config_checkers__ = 'checkers'
 
-
+from . import checkers
+from . import framework
 from . import health_check
-from . import framework 
