@@ -2,15 +2,13 @@
 History
 =======
 
-0.1.0 (2018-08-27)
+0.1.0 (2019-01-30)
 ------------------
 
 * First commit
 
-0.2.0 (2018-11-15)
+0.2.0 (2019-02-08)
 ------------------
 
-* Crops grib2 files and selects needed variables
-* Creates WindNinja config and runs daily
-* Dockerized
-* Commnad line capability
+* inicheck integration
+* Checks file size, file existance, NetCDF file variables

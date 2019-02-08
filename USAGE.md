@@ -2,9 +2,9 @@ As a work of the United States government, this project is in the public domain
 within the United States.
 
 Additionally, we waive copyright and related rights in the work worldwide
-through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
+through the [CCO 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
 
-### CC0 1.0 Universal Summary
+### CCO 1.0 Universal Summary
 
 This is a human-readable summary of the
 [Legal Code (read the full text)](https://creativecommons.org/publicdomain/zero/1.0/legalcode).
@@ -19,7 +19,7 @@ purposes, all without asking permission.
 
 #### Other information
 
-In no way are the patent or trademark rights of any person affected by CC0,
+In no way are the patent or trademark rights of any person affected by CCO,
 nor are the rights that other persons may have in the work or in how the work
 is used, such as publicity or privacy rights.
 
